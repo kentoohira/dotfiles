@@ -139,6 +139,10 @@ initialize() {
   # シェルをzshにする
   [ ${SHELL} != "/bin/zsh"  ] && chsh -s /bin/zsh
   echo "$(tput setaf 2)Initialize complete!. ✔︎$(tput sgr0)"
+
+  ## $PATHを通す
+　#PATH=/bin:/usr/bin:/usr/local/bin:${PATH} && export PATH
+  #echo "$(tput setaf 2)Initialize complete!. ✔︎$(tput sgr0)"
 }
 
 # 引数によって場合分け

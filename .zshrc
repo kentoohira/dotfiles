@@ -117,3 +117,10 @@ SPROMPT="%{${fg[red]}%}correct: %R -> %r ? [n,y,a,e] %{${reset_color}%}"
 
 # 補完候補もLS_COLORSに合わせて色が付くようにする
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+
+#
+# plenv
+#
+export PATH="$HOME/.plenv/bin:$PATH"
+eval "$(plenv init -)"
+

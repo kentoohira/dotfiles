@@ -107,6 +107,7 @@ initialize() {
       'perl-build'
       'phantomjs'
       'casperjs'
+      'http://git.io/sshpass.rb'
     )
   
     local installed=`brew list`

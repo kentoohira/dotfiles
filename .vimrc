@@ -25,7 +25,8 @@ set t_Co=256
 syntax on
 colorscheme jellybeans
 
-
+" delete効かせる
+set backspace=indent,eol,start
 
 " ターミナルの右端で文字を折り返さない
 set nowrap
@@ -51,7 +52,7 @@ set wildmenu
 " コマンドを画面の最下部に表示する
 set showcmd
 " クリップボードを共有する(設定しないとvimとのコピペが面倒です)
-set clipboard=unnamed
+set clipboard=unnamed,autoselect
 
 " 改行時にインデントを引き継いで改行する
 set autoindent
@@ -69,14 +70,13 @@ set nf=hex
 " マウス使えます
 set mouse=a
 
-set clipboard=unnamed,autoselect
 
 " インサートモードの時に C-j でノーマルモードに戻る
 imap <C-j> <esc>
 " [ って打ったら [] って入力されてしかも括弧の中にいる(以下同様)
-imap [ []<left>
-imap ( ()<left>
-imap { {}<left>
+"imap [ []<left>
+"imap ( ()<left>
+"imap { {}<left>
 
 " ２回esc を押したら検索のハイライトをヤメる
 nmap <Esc><Esc> :nohlsearch<CR><Esc>

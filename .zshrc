@@ -9,7 +9,7 @@ source ~/.zplug/init.zsh
 zplug 'zsh-users/zsh-autosuggestions'
 zplug 'zsh-users/zsh-completions'
 zplug 'zsh-users/zsh-syntax-highlighting', nice:10
-zplug 'mollifier/anyframe'
+#zplug 'mollifier/anyframe'
 
 if ! zplug check --verbose; then
   printf 'Install? [y/N]: '
@@ -80,8 +80,8 @@ export LANG=ja_JP.UTF-8
 bindkey -v
 bindkey -v '^?' backward-delete-char
 bindkey '^[[Z' reverse-menu-complete
-bindkey '^@' anyframe-widget-cd-ghq-repository
-bindkey '^r' anyframe-widget-put-history
+#bindkey '^@' anyframe-widget-cd-ghq-repository
+#bindkey '^r' anyframe-widget-execute-history
 
 #
 # Aliases
@@ -108,7 +108,6 @@ zstyle ':completion:*:options' description 'yes'
 # color
 #
 autoload colors
-colors
 
 # プロンプト
 PROMPT="%{${fg[green]}%}%n@%m %{${fg[yellow]}%}%~ %{${fg[red]}%}%# %{${reset_color}%}"

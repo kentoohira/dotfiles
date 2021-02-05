@@ -36,15 +36,6 @@ autoload -Uz vcs_info
 zle -N self-insert url-quote-magic
 
 #
-# pyenv
-#
-$ pyenv init
-# Load pyenv automatically by appending
-# the following to ~/.bash_profile:
-
-eval "$(pyenv init -)"
-
-#
 # General settings
 #
 
@@ -131,4 +122,11 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 #
 #export PATH="$HOME/.plenv/bin:$PATH"
 #eval "$(plenv init -)"
+
+#
+# pyenv
+#
+#$ pyenv init
+#eval "$(pyenv init -)"
+
 

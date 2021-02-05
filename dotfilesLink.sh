@@ -103,10 +103,10 @@ initialize() {
       'curl'
       'lua'
       'vim --with-lua'
-      'plenv'
-      'perl-build'
-      'phantomjs'
-      'casperjs'
+#      'plenv'
+#      'perl-build'
+#      'phantomjs'
+#      'casperjs'
       'http://git.io/sshpass.rb'
     )
   

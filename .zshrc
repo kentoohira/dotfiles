@@ -8,7 +8,7 @@ source ~/.zplug/init.zsh
 
 zplug 'zsh-users/zsh-autosuggestions'
 zplug 'zsh-users/zsh-completions'
-zplug 'zsh-users/zsh-syntax-highlighting', nice:10
+zplug 'zsh-users/zsh-syntax-highlighting', defer:1
 #zplug 'mollifier/anyframe'
 
 if ! zplug check --verbose; then
@@ -34,6 +34,15 @@ autoload -Uz vcs_info
 #
 
 zle -N self-insert url-quote-magic
+
+#
+# pyenv
+#
+$ pyenv init
+# Load pyenv automatically by appending
+# the following to ~/.bash_profile:
+
+eval "$(pyenv init -)"
 
 #
 # General settings
@@ -120,6 +129,6 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 #
 # plenv
 #
-export PATH="$HOME/.plenv/bin:$PATH"
-eval "$(plenv init -)"
+#export PATH="$HOME/.plenv/bin:$PATH"
+#eval "$(plenv init -)"
 

@@ -4,8 +4,9 @@
 sh dotfilesLink.sh init  
 sh dotfilesLink.sh deploy  
   
-## dotfilesLinsk.shからPerl関連は外しました 
 ## [perl環境設定]
+dotfilesLinsk.shからPerl関連は外しました
+
 plenv install 5.25.6  
 plenv global 5.25.6  
 plenv install-cpanm  
